@@ -1,0 +1,178 @@
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 0.85rem;
+  scroll-behavior: smooth;
+}
+
+.logo {
+  font-size: 1.8rem;
+}
+
+nav, .cta__btns, .menu__items {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  justify-content: space-between;
+}
+
+.menu__items li, .cta__btns li {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  color: hsl(0, 0%, 41%);
+  font-weight: 800;
+}
+
+.cta__btns li:nth-last-child(1) {
+  background: blue;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 0.2rem;
+}
+
+
+/*CLIENT LOGO*/
+.client__logos img {
+  width: 10rem;
+  margin-right: 1rem;
+}
+
+.client__logos {
+  margin-top: 4rem;
+}
+
+.client__logos img:nth-child(2) {
+  width: 3rem;
+}
+
+/*MAIN*/
+main h1 {
+  font-size: 3rem;
+  color: blue;
+}
+
+main p {
+  font-size: 1rem;
+  width: 18rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+main button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#text__side {
+  margin-top: 3rem;
+}
+
+/*HERO IMAGE*/
+.img__side img {
+  width: 20rem;
+}
+
+.mobile__img {
+  display: none;
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8rem;
+}
+
+/*FOOTER*/
+footer {
+  text-align: center;
+}
+span {
+  color: blue;
+  text-decoration: underline;
+}
+
+/*RESPONSIVE*/
+@media (min-width: 300px) and (max-width: 480px) {
+  * {
+    font-size: 1rem;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  nav {
+    margin: 0 1.5rem 0 1.5rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: -3rem auto 0 auto;
+  }
+
+  .client__logos img {
+    width: 30rem;
+  }
+
+  .client__logos {
+    margin-top: 1rem;
+    display: flex;
+  }
+
+  .client__logos img:nth-child(2) {
+    width: 7rem;
+  }
+
+  /*IMAGES*/ 
+  .desktop__img {
+    display: none;
+  }
+
+  .mobile__img {
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .cta__btns, .menu__items {
+    display: none;
+  }
+
+  main h1 {
+    font-size: 2.5rem;
+  }
+
+  /*client logos*/
+  .client__logos img {
+    width: 4.5rem;
+    margin-right: 0.8rem;
+  }
+
+  .attribution {
+    width: 13rem;
+    margin: 10rem auto 0 auto;
+    text-align: center;
+  }
+}
